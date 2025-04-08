@@ -1,0 +1,32 @@
+{
+	"autoload": {
+		"psr-4": {
+			"ReadyWorks\\": "console/classes/"
+		},
+		"classmap": [
+			"api/src/"
+		]
+	},  
+	"require": {
+		"slim/slim": "4.*",
+		"slim/psr7": "^1.0",
+		"ext-pdo": "*",
+		"ext-fileinfo": "*",
+		"ext-json": "*",
+		"voku/anti-xss": "^4.1",
+		"ezyang/htmlpurifier": "4.15.0",
+		"simplesamlphp/simplesamlphp": "^2.3",
+		"simplesamlphp/simplesamlphp-module-ldap": "^2.4",
+		"phpoffice/phpspreadsheet": "^4.1"
+	},
+	"config": {
+		"allow-plugins": {
+			"simplesamlphp/composer-xmlprovider-installer": true,
+			"simplesamlphp/composer-module-installer": true,
+			"pestphp/pest-plugin": true
+		}
+	},
+	"require-dev": {
+		"pestphp/pest": "^2.36"
+	}
+}
